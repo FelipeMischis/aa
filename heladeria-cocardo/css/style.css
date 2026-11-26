@@ -1,0 +1,176 @@
+/* =========================================
+   HELADERÍA COCARDO - Hoja de estilos
+   ========================================= */
+
+/* ---------- ESTILOS GENERALES (ya están listos) ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f9ff;
+    color: #3b2414;
+    margin: 0;
+}
+
+/* Ojo: estos estilos NO se van a ver hasta que
+   el HTML tenga las etiquetas header, main y footer */
+header {
+    background-color: #bfe3ff;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #6b3e26;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.gerente {
+    width: 150px;
+}
+
+nav a {
+    color: #6b3e26;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.aviso {
+    background-color: #fff3b0;
+    border: 2px dashed #c8102e;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.sabor {
+    background-color: white;
+    border: 3px solid #bfe3ff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.sabor img {
+    width: 150px;
+}
+
+
+/* =========================================
+   SOLUCIÓN - TAREAS
+   ========================================= */
+
+/* TAREA 1 */
+header {
+    text-align: center;
+}
+
+/* TAREA 2 */
+h2 {
+    color: #c8102e;
+}
+
+/* TAREA 3 */
+footer {
+    text-align: center;
+}
+
+/* TAREA 4 */
+footer a {
+    color: white;
+}
+
+/* TAREA 5 */
+.sabor {
+    text-align: center;
+}
+
+/* TAREA 6 */
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Imagen de Cereza centrada */
+.gerente {
+    display: block;
+    margin: 0 auto;
+}
+
+/* TAREA 7 */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+label.en-linea {
+    display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SOLUCIÓN - DESAFÍOS EXTRA
+   ========================================= */
+
+/* DESAFÍO 1 (FLEXBOX) */
+.marca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* DESAFÍO 2 (FLEXBOX) */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* DESAFÍO 3 (GRID) */
+.sabores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* DESAFÍO 4 (RESPONSIVE) */
+@media (max-width: 600px) {
+    .sabores {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: auto;
+    }
+}
